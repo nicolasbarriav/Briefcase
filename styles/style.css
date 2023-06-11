@@ -45,13 +45,18 @@ nav .item:hover{
     color: var(--main-hover-color);
 }
 
+nav.app-width{
+    /* TO DO */
+}
+
 @media (min-width : 500px){
     nav.app-width {
         display: none;
-        background-color: red;
     }
-
+}
+@media (max-width : 501px){
     nav.full-width {
+        display:none;
     }
 }
 
@@ -147,14 +152,32 @@ p{
 
 article.projects{
     margin-top: 15px;
+    margin-bottom: 0px;
     padding: 15px;
     background-color: var(--main-background-color2);
     color: var(--main-text-color);
+    display:flex;
+    flex-direction: column;
 }
 
-article.projects>*{
-    margin-block-start: 1em;
+article.projects .cont{
+    display: flex;
+    flex-direction: row;
 }
+article.projects .cont .box{
+    max-width: 200px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+}
+article.projects .cont h4 a{
+    color: var(--main-text-color);
+    text-decoration: none;
+
+}
+article.projects .cont .box:hover{
+    box-shadow: 2px 2px 5px 5px black;
+}
+
 article.projects h2{
     text-align: center;
     margin: auto;
@@ -162,4 +185,38 @@ article.projects h2{
 }
 article.projects h5{
     text-align: center;
+}
+
+article.services{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--main-hover-color);
+    color: var(--main-background-color);
+}
+article.services h2{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    text-decoration: underline solid var(--main-background-color2);
+    margin-top: 0px;
+}
+article.services li{
+    margin-left: 20px;
+}
+
+article.contact h2{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline solid var(--main-text_color2);
+    margin-top: 0px;
+}
+
+footer{
+    background-color: #000003;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer>*{
+    margin: 0px;
 }
