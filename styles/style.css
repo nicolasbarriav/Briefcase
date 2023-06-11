@@ -1,0 +1,165 @@
+:root {
+    --main-text-color: #FFFFFF ;
+    --main-text_color2:#D84315;
+    --main-hover-color: #BDBDBD;
+    --main-hover-section: #616161;
+    --main-link-color: rgb();
+    --main-icon-color:  rgb();
+    --main-background-color: #212121;
+    --main-background-color2: #060925;
+    --main-background-color-container:#424242;
+    --main-background-color-container2:#202020cf;
+    
+}
+
+body, html{
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    margin:0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: var(--main-background-color-container);
+}
+
+nav.full-width{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    direction: rtl;
+    padding: 10px;
+}
+
+nav.full-width .item{
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav:hover{
+    color: var(--main-hover-section);
+}
+
+nav .item:hover{
+    color: var(--main-hover-color);
+}
+
+@media (min-width : 500px){
+    nav.app-width {
+        display: none;
+        background-color: red;
+    }
+
+    nav.full-width {
+    }
+}
+
+.container .img-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static.hosteltur.com/app/public/uploads/img/articles/2013/08/01/L_5c1a350c86a1d_costanera_center1.jpg");
+    background-repeat: no-repeat;background-position: center;
+    background-size: cover;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.container img.img-profile{
+    width: 20vw;
+    border-radius: 50%;
+}
+
+.container .container-box{
+    background-color:var(--main-background-color-container2) ;
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+}
+
+.container .about-me>*{
+    margin-block-start: 1em;
+}
+
+.container .about-me{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .about-me h2{
+    margin: auto;
+    text-decoration: underline solid var(--main-text_color2);
+}
+
+.container .about-me a{
+    text-decoration: none;
+    color: var(--main-text_color2);
+}
+
+p{
+    margin: 10px;
+    text-indent: 25px;
+}
+
+.container .time-line{
+    margin: auto;
+    margin-top: 15px;
+    max-width: 1000px;
+    min-width: 500px;
+    background-image: linear-gradient(to right, var(--main-hover-color) , var(--main-background-color-container));
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container .time-line .left-box, .right-box{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container .time-line .left-box .box, .right-box .box{
+    background-color: var(--main-background-color-container2);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.center{
+    background-color: none;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    /* border: solid; */
+    display: flex;
+}
+
+article.projects{
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--main-background-color2);
+    color: var(--main-text-color);
+}
+
+article.projects>*{
+    margin-block-start: 1em;
+}
+article.projects h2{
+    text-align: center;
+    margin: auto;
+    text-decoration: underline solid var(--main-text_color2);
+}
+article.projects h5{
+    text-align: center;
+}
